@@ -96,9 +96,10 @@ print(sum / len(my_list))
 my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.11
-for value in my_list:
-    if value == 3.14:
-        print(value)
+
+for i, value in enumerate(my_list):
+    if my_list[i] == 3.14:
+        print(i)
         break
 
 # exo 6.12
@@ -118,9 +119,8 @@ my_list = [2.71, 42, 123, 2, 3.14, 1.61]
 
 # réponse 6.13
 count = 0
-for value in my_list:
-    my_list[count] = (value * 100)
-    count += 1
+for i, value in enumerate(my_list):
+    my_list[i] = (value * 100)
 print(my_list)
 
 # exo 6.14

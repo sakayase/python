@@ -56,6 +56,19 @@ pfc_bob = random.randint(1, 3)
 pfc_alice = random.randint(1, 3)
 
 if pfc_bob == pfc_alice:
+    if pfc_bob == 1:
+        print("bob a fait pierre")
+    elif pfc_bob == 2:
+        print("bob a fait papier")
+    else:
+        print("bob a fait ciseaux")
+    
+    if pfc_alice == 1:
+        print("alice a fait pierre")
+    elif pfc_alice == 2:
+        print("alice a fait papier")
+    else:
+        print("alice a fait ciseaux")
     print("draw")
 elif (pfc_bob == 1 and pfc_alice == 2) or (pfc_bob == 2 and pfc_alice == 3) or (pfc_bob == 3 and pfc_alice == 1):
     if pfc_bob == 1:
