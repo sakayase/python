@@ -139,6 +139,5 @@ my_dict = {
 # etc...
 
 # réponse 9.9
-items = my_dict.items()
-for item in items:
+for item in my_dict.items():
     print(f"key: {item[0]}, value: {item[1]}")
